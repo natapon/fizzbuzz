@@ -17,6 +17,7 @@ Fizzbuzz for TTD method training.
 =cut
 
 Readonly::Scalar my $FIZZ_NUMBER => 3;
+Readonly::Scalar my $BUZZ_NUMBER => 5;
 
 =head2 auto
     return a number when a number isn't divisible by 3 or 5.
@@ -28,6 +29,7 @@ sub fizzbuzz {
     my ($num) = @_;
 
     if(!($num % $FIZZ_NUMBER)) { return 'fizz'; }
+    if(!($num % $BUZZ_NUMBER)) { return 'buzz'; }
     return $num;
 }
 
