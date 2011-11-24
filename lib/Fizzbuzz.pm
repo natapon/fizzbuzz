@@ -20,7 +20,8 @@ Readonly::Scalar my $FIZZ_NUMBER => 3;
 
 =head2 auto
     return a number when a number isn't divisible by 3 or 5.
-    if a number can divisible by 3 it's return 'fizz'.
+    return 'fizz' if a number can divisible by 3.
+    return 'buzz' if a number can divisible by 5.
 =cut
 
 sub fizzbuzz {
