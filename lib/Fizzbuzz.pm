@@ -1,7 +1,8 @@
 package Fizzbuzz;
 
 sub fizzbuzz {
-    return 2;
+    my ($num) = @_;
+    return $num;
 }
 
 1;
