@@ -4,4 +4,8 @@ use inc::Module::Install;
 
 name 'fizzbuzz';
 
+version '0.001';
+
 requires 'Test::More';
+auto_install;
+WriteAll;
