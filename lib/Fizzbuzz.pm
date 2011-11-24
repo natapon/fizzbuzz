@@ -2,6 +2,7 @@ package Fizzbuzz;
 
 use strict;
 use warnings;
+use ReadOnly;
 
 =head1 NAME
 
@@ -15,6 +16,7 @@ Fizzbuzz for TTD method training.
 
 =cut
 
+Readonly my $FIZZ_NUMBER => 5;
 
 =head2 auto
     return a number when a number isn't divisible by 3 or 5.
@@ -24,7 +26,7 @@ Fizzbuzz for TTD method training.
 sub fizzbuzz {
     my ($num) = @_;
 
-    if($num == 3) { return 'fizz'; }
+    if($num == FIZZ_NUMBER) { return 'fizz'; }
     return $num;
 }
 
