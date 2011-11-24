@@ -11,6 +11,7 @@ use ok('Fizzbuzz');
 
 {
     is(Fizzbuzz::fizzbuzz(3), 'fizz', 'Is "fizz" text');
+    is(Fizzbuzz::fizzbuzz(6), 'fizz', 'Is "fizz" text');
 }
 
 done_testing();
